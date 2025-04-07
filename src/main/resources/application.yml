@@ -1,8 +1,14 @@
 spring:
   kafka:
     bootstrap-servers: localhost:9092
+    consumer:
+      group-id: consumer-group
   application:
     name: kafka-consumer
 
 server:
   port: 8888
+#
+#logging:
+#  level:
+#    kafka: trace
